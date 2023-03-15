@@ -1,16 +1,16 @@
 /* Write a function to do the division operation without using the built-in division*/
-let num=0;
+let num1=0;
 function division(number, dividedBy) {
    if(number==0||dividedBy==0)
    {
     return 0;
    }
    else{
-    ++num;
+    ++num1;
     number-=dividedBy;
     division(number,dividedBy)
    }
-    return num;
+    return num1;
 }
 
 /* Write a function that implement Math.pow(x,n) but using recursion
