@@ -6,7 +6,7 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
-let capA= /[A]$/g;
+let capA= /[A-Z]$/g ,i;
 let res=capA.test(s);
 
     return res;
@@ -17,10 +17,10 @@ let res=capA.test(s);
 which end with io (example@example.io) */
 
 function ioEmail(email){
-let reg=/example+@example.io/;
+let reg=/^[a-zA-Z0-9-_]+@[a-zA-z0-9-_]+.io$/;
+// let reg=/example+@example.io/i;
 let res1=reg.test(email);
-    return res1;
-}
+    return res1;}
 
 /* You have a text that contain image names with their extention you need to write a function to 
 find all images in that text and return their names and extention in an array 
